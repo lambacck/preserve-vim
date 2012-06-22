@@ -1,0 +1,2 @@
+nmap <silent> <Leader>g :call Preserve("normal gg=G")<CR>
+nmap <silent> <Leader><space> :call Preserve("%s/\\s\\+$//e")<CR>
