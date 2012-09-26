@@ -1,5 +1,11 @@
 " A wrapper function to restore the cursor position, window position,
 " and last search after running a command.
+"
+if exists("g:loaded_preserve") || &cp
+  finish
+endif
+let g:loaded_preserve = 1
+
 function! Preserve(command)
   " Save the last search
   let last_search=@/
